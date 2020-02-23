@@ -1,0 +1,8 @@
+a = eval(input())
+ls = []
+from itertools import permutations
+x = permutations(map(str, a))
+for i in x:	
+	b = ''.join(i)
+	ls.append(b)
+print(max(ls))
