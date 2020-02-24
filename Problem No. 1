@@ -1,5 +1,6 @@
 lst = eval(input())
 a = []
+x = len(lst)
 a.append(lst[0])
 lst.remove(lst[0])
 for i in range(len(lst)):
@@ -8,4 +9,7 @@ for i in range(len(lst)):
 			a.append(lst[j])
 			lst.remove(lst[j])
 			break
-print(a)
+if x == len(a):
+	print(a)
+else :
+	print("[]")
